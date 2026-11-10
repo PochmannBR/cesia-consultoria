@@ -1,117 +1,224 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CESIA | Consultoria em Inteligência Aumentada</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
-        .hero-gradient { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); }
-        .section-padding { padding-top: 5rem; padding-bottom: 5rem; }
-    </style>
+    <title>CESIA | Consultoria em Educação e Soluções com Inteligência Aumentada</title>
+    <meta name="description" content="Capacitação em IA, apresentações científicas, ferramentas sob medida e IA local para dados sensíveis. Consultoria para educação e saúde no Rio de Janeiro.">
+    <meta name="theme-color" content="#0f172a">
+
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="CESIA">
+    <meta property="og:title" content="CESIA | Inteligência Aumentada para educação e saúde">
+    <meta property="og:description" content="Capacitação em IA, apresentações científicas, ferramentas sob medida e IA local para dados sensíveis.">
+    <meta property="og:url" content="https://pochmannbr.github.io/cesia-consultoria/">
+    <meta property="og:image" content="https://pochmannbr.github.io/cesia-consultoria/og-cesia.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="logo-cesia-mark.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-slate-50 text-slate-900">
+<body>
 
-    <nav class="bg-white/90 backdrop-blur-md border-b border-slate-200 py-4 sticky top-0 z-50">
-        <div class="container mx-auto px-6 flex justify-between items-center">
-            <div class="text-2xl font-bold tracking-tighter text-slate-800">CESIA</div>
-            <div class="hidden md:flex space-x-8 text-sm font-medium">
-                <a href="#sobre" class="hover:text-blue-600 transition">Sobre Nós</a>
-                <a href="#diretrizes" class="hover:text-blue-600 transition">Missão & Visão</a>
-                <a href="#valores" class="hover:text-blue-600 transition">Valores</a>
-                <a href="https://wa.me/5521996814260" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">Contato</a>
-            </div>
-        </div>
-    </nav>
-
-    <header class="hero-gradient text-white py-24">
-        <div class="container mx-auto px-6 flex flex-col items-center text-center">
-            <div class="mb-8 w-48 h-48 bg-white/10 rounded-xl flex items-center justify-center border border-white/20 shadow-2xl overflow-hidden">
-                <img src="logo-cesia.png" alt="CESIA Logo" class="max-w-[80%]">
-            </div>
-            <h1 class="text-4xl md:text-6xl font-bold mb-4 tracking-tight">CESIA</h1>
-            <p class="text-xl md:text-2xl text-slate-300 max-w-2xl font-light">
-                Consultancy in Education and Solutions with Intelligence Augmentation
-            </p>
+    <header class="nav">
+        <div class="container nav__inner">
+            <a href="#inicio" class="brand" aria-label="CESIA, página inicial">
+                <img src="logo-cesia-mark.png" alt="" width="36" height="36">
+                <span>CESIA</span>
+            </a>
+            <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">
+                <span></span><span></span><span></span>
+            </button>
+            <nav id="menu" class="nav__menu" aria-label="Menu principal">
+                <a href="#servicos">Serviços</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#sobre">Sobre</a>
+                <a href="https://wa.me/5521996814260?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20CESIA." class="btn btn--primary btn--sm" target="_blank" rel="noopener">Contato</a>
+            </nav>
         </div>
     </header>
 
-    <section id="sobre" class="section-padding bg-white">
-        <div class="container mx-auto px-6">
-            <div class="max-w-3xl mx-auto text-center">
-                <h2 class="text-blue-600 font-bold uppercase tracking-widest text-sm mb-4">Sobre Nós</h2>
-                <h3 class="text-3xl font-bold mb-6 text-slate-800">Tradição em Estratégia, Vanguarda em Tecnologia</h3>
-                <p class="text-lg text-slate-600 leading-relaxed mb-6">
-                    A CESIA nasce da convergência entre o rigor da engenharia de defesa e a inovação da Inteligência Aumentada. Fundada por um oficial superior do Exército Brasileiro e mestre em engenharia, nossa consultoria aplica a disciplina militar e o pensamento sistêmico para resolver desafios complexos na saúde, na educação e no desenvolvimento de softwares críticos. 
-                </p>
-                <p class="text-lg text-slate-600 leading-relaxed">
-                    Acreditamos que a tecnologia deve ser uma extensão do potencial humano. Por isso, desenvolvemos soluções que otimizam o tempo de profissionais e elevam a precisão na tomada de decisão, garantindo que a inteligência artificial trabalhe sempre como uma aliada estratégica da inteligência humana.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section id="diretrizes" class="section-padding bg-slate-50">
-        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12">
-            <div class="p-10 border border-slate-200 rounded-2xl bg-white shadow-sm hover:shadow-md transition">
-                <h2 class="text-blue-600 font-bold uppercase tracking-widest text-sm mb-4">Missão</h2>
-                <p class="text-2xl font-semibold leading-relaxed text-slate-800">
-                    Capacitar pessoas e otimizar processos através da Inteligência Aumentada, transformando complexidade tecnológica em soluções práticas, éticas e de alto impacto.
-                </p>
-            </div>
-            <div class="p-10 border border-slate-200 rounded-2xl bg-white shadow-sm hover:shadow-md transition">
-                <h2 class="text-blue-600 font-bold uppercase tracking-widest text-sm mb-4">Visão</h2>
-                <p class="text-2xl font-semibold leading-relaxed text-slate-800">
-                    Ser a consultoria de referência na integração soberana entre o potencial humano e a IA, consolidando-se como o principal hub de soluções inteligentes até 2030.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section id="valores" class="section-padding bg-white">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-16">Nossos Valores</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="p-8 rounded-xl bg-slate-50 border border-slate-100">
-                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mb-6">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+    <main>
+        <section id="inicio" class="hero">
+            <div class="container hero__inner">
+                <div class="hero__text">
+                    <p class="eyebrow eyebrow--light">Consultoria em Educação e Soluções com Inteligência Aumentada</p>
+                    <h1>Inteligência artificial aplicada a quem ensina, cuida e decide.</h1>
+                    <p class="hero__lead">Ajudamos instituições de ensino, profissionais de saúde e equipes técnicas a usar IA com método, segurança dos dados e resultado que se pode medir.</p>
+                    <div class="hero__actions">
+                        <a href="https://wa.me/5521996814260?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20CESIA." class="btn btn--whatsapp" target="_blank" rel="noopener">Conversar pelo WhatsApp</a>
+                        <a href="#servicos" class="btn btn--ghost">Ver serviços</a>
                     </div>
-                    <h3 class="font-bold text-xl mb-3">Soberania e Segurança</h3>
-                    <p class="text-slate-600">Tratamos o dado e o conhecimento como ativos estratégicos, garantindo proteção e integridade absoluta.</p>
                 </div>
-                <div class="p-8 rounded-xl bg-slate-50 border border-slate-100">
-                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mb-6">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-                    </div>
-                    <h3 class="font-bold text-xl mb-3">Excelência Operacional</h3>
-                    <p class="text-slate-600">Rigor técnico em cada entrega, buscando máxima eficiência com precisão matemática.</p>
-                </div>
-                <div class="p-8 rounded-xl bg-slate-50 border border-slate-100">
-                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mb-6">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
-                    </div>
-                    <h3 class="font-bold text-xl mb-3">Human-Centric AI</h3>
-                    <p class="text-slate-600">A tecnologia deve expandir as fronteiras do intelecto humano, mantendo sempre o homem no controle.</p>
+                <div class="hero__logo">
+                    <img src="logo-cesia-mark.png" alt="Escudo da CESIA com circuitos e seta ascendente" width="256" height="256">
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <footer class="bg-slate-900 text-white py-20">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-3xl font-bold mb-4">Potencialize sua Estratégia</h2>
-            <p class="text-slate-400 mb-10 max-w-md mx-auto">Entre em contato para saber como a Inteligência Aumentada pode transformar seu fluxo de trabalho.</p>
-            <a href="https://wa.me/5521982259676" target="_blank" class="inline-flex items-center bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-10 rounded-full transition shadow-lg transform hover:-translate-y-1">
-                Iniciar Conversa via WhatsApp
-            </a>
-            <div class="mt-16 pt-8 border-t border-slate-800 text-slate-500 text-sm">
-                <p>CESIA - Consultancy in Education and Solutions with Intelligence Augmentation</p>
-                <p class="mt-2">© 2026 Rio de Janeiro, Brasil. Todos os direitos reservados.</p>
+        <section id="servicos" class="section">
+            <div class="container">
+                <p class="eyebrow">Serviços</p>
+                <h2 class="section__title">O que a CESIA entrega</h2>
+                <div class="grid grid--4">
+                    <article class="card">
+                        <div class="card__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><path d="M12 14l9-5-9-5-9 5 9 5z"/><path d="M12 14v7M5 11.5v4.5c0 1.5 3 3 7 3s7-1.5 7-3v-4.5"/></svg>
+                        </div>
+                        <h3>Capacitação em IA</h3>
+                        <p>Cursos, oficinas e palestras para equipes que querem usar IA generativa no trabalho diário com critério ético e ganho real de produtividade.</p>
+                    </article>
+                    <article class="card">
+                        <div class="card__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4M7 12l3-3 2 2 4-4"/></svg>
+                        </div>
+                        <h3>Aulas e apresentações científicas</h3>
+                        <p>Artigos, dados e anotações viram aulas claras e bem estruturadas, com roteiro de condução para o palestrante usar no dia.</p>
+                    </article>
+                    <article class="card">
+                        <div class="card__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><path d="M8 9l-4 3 4 3M16 9l4 3-4 3M13.5 6l-3 12"/></svg>
+                        </div>
+                        <h3>Ferramentas sob medida</h3>
+                        <p>Aplicações web e automações que eliminam tarefas repetitivas. Do protótipo à entrega documentada, pronta para a sua equipe manter.</p>
+                    </article>
+                    <article class="card">
+                        <div class="card__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 018 0v4M12 15v2"/></svg>
+                        </div>
+                        <h3>IA local para dados sensíveis</h3>
+                        <p>Modelos de linguagem executados na sua própria infraestrutura, para quem não pode enviar prontuários, provas ou documentos internos a serviços externos.</p>
+                    </article>
+                </div>
             </div>
+        </section>
+
+        <section class="section section--alt">
+            <div class="container">
+                <p class="eyebrow">Como trabalhamos</p>
+                <h2 class="section__title">Três etapas com um único responsável</h2>
+                <ol class="steps">
+                    <li class="step">
+                        <span class="step__num">1</span>
+                        <h3>Diagnóstico</h3>
+                        <p>Entendemos o problema, os dados disponíveis e as restrições de segurança antes de propor qualquer tecnologia.</p>
+                    </li>
+                    <li class="step">
+                        <span class="step__num">2</span>
+                        <h3>Protótipo</h3>
+                        <p>Uma primeira versão funcional em poucos dias, testada com quem vai usar.</p>
+                    </li>
+                    <li class="step">
+                        <span class="step__num">3</span>
+                        <h3>Entrega e capacitação</h3>
+                        <p>A solução final vem com documentação e treinamento, para que a equipe siga com autonomia.</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="projetos" class="section">
+            <div class="container">
+                <p class="eyebrow">Projetos</p>
+                <h2 class="section__title">Trabalhos recentes</h2>
+                <div class="grid grid--3">
+                    <article class="project">
+                        <span class="tag">Ferramenta</span>
+                        <h3>PaperSlide</h3>
+                        <p>Aplicação web que transforma artigos científicos em PDF em apresentações de PowerPoint totalmente editáveis, com um fluxo guiado de briefing, evidências, roteiro e design.</p>
+                        <a href="https://pochmannbr.github.io/paperslide/" class="link" target="_blank" rel="noopener">Acessar o PaperSlide →</a>
+                    </article>
+                    <article class="project">
+                        <span class="tag">Saúde</span>
+                        <h3>Aulas para médicos palestrantes</h3>
+                        <p>Apresentações para ligas acadêmicas e eventos médicos, montadas a partir do material do especialista e entregues com guia de condução. Os novos clientes chegam por indicação de quem já foi atendido.</p>
+                    </article>
+                    <article class="project">
+                        <span class="tag">Pesquisa</span>
+                        <h3>Modelos de linguagem locais em apoio clínico</h3>
+                        <p>Estudo sobre o desempenho de modelos compactos rodando em hardware limitado, com e sem recuperação de documentos. Apresentado no Congresso Brasileiro de Engenharia Biomédica de 2026.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="section section--alt">
+            <div class="container">
+                <div class="about">
+                    <div>
+                        <p class="eyebrow">Sobre</p>
+                        <h2 class="section__title">Pesquisa aplicada que vira solução prática</h2>
+                        <p class="about__text">A CESIA reúne experiência em pesquisa aplicada, docência de pós-graduação e desenvolvimento de software. Cada projeto parte de uma pergunta concreta do cliente e termina com algo que a equipe consegue usar sozinha.</p>
+                    </div>
+                    <div class="mv">
+                        <div class="mv__item">
+                            <h3>Missão</h3>
+                            <p>Capacitar pessoas e otimizar processos com Inteligência Aumentada, transformando complexidade tecnológica em soluções práticas e éticas.</p>
+                        </div>
+                        <div class="mv__item">
+                            <h3>Visão</h3>
+                            <p>Ser referência no uso responsável de Inteligência Aumentada em educação e saúde no Brasil.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="values__title">Valores</h3>
+                <div class="grid grid--3">
+                    <div class="value">
+                        <h4>Segurança da informação</h4>
+                        <p>Dados e conhecimento do cliente são ativos estratégicos e recebem proteção em todas as etapas.</p>
+                    </div>
+                    <div class="value">
+                        <h4>Rigor técnico</h4>
+                        <p>Toda entrega é testada, documentada e baseada em evidência.</p>
+                    </div>
+                    <div class="value">
+                        <h4>IA a serviço das pessoas</h4>
+                        <p>A tecnologia amplia a capacidade humana, e a decisão final continua com quem tem a responsabilidade.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="cta">
+            <div class="container cta__inner">
+                <h2>Vamos conversar sobre o seu desafio?</h2>
+                <p>Conte o que você precisa e retornamos com uma proposta de caminho.</p>
+                <a href="https://wa.me/5521996814260?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20CESIA." class="btn btn--whatsapp btn--lg" target="_blank" rel="noopener">Iniciar conversa pelo WhatsApp</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p>CESIA · Consultoria em Educação e Soluções com Inteligência Aumentada</p>
+            <p>© 2026 · Rio de Janeiro, Brasil</p>
         </div>
     </footer>
 
+    <script>
+        (function () {
+            var btn = document.querySelector('.nav__toggle');
+            var menu = document.getElementById('menu');
+            function setOpen(open) {
+                btn.setAttribute('aria-expanded', open);
+                btn.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu');
+                menu.classList.toggle('is-open', open);
+            }
+            btn.addEventListener('click', function () {
+                setOpen(btn.getAttribute('aria-expanded') !== 'true');
+            });
+            menu.addEventListener('click', function (e) {
+                if (e.target.tagName === 'A') setOpen(false);
+            });
+        })();
+    </script>
 </body>
 </html>
